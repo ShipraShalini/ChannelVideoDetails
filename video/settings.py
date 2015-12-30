@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'src'
+    'api',
+    'FrontEnd'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'video.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['FrontEnd.templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

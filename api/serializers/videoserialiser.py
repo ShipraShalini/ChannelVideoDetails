@@ -1,5 +1,7 @@
-from src.common.models.models import *
 from rest_framework.serializers import ModelSerializer
+
+from api.models.models import *
+
 
 class VideoDetailSerializer(ModelSerializer):
     class Meta:

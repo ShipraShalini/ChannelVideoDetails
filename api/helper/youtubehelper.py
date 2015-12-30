@@ -1,6 +1,9 @@
-from src.common.constants.constants import *
 from apiclient.discovery import build
-from src.common.models.models import videos
+
+from api.constants.backendconstants import *
+from api.models.models import videos
+
+
 def ytbuildurl():
     return build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
     developerKey=DEVELOPER_KEY)

@@ -16,13 +16,17 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from src.api.views.videoview import listview
-from src.api.views.detailsview import detailsview
+from FrontEnd.views.channelinfoview import ChannelInfoView
 
+from FrontEnd.views.videoinfoview import VideoInfoView
+from api.views.channelview import ChannelView
+from api.views.videoview import VideoView
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
         url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-        url(r'^list/', listview.as_view()),
-        url(r'^detail/', detailsview.as_view()),
+        url(r'^list/', ChannelView.as_view()),
+        url(r'^detail/', VideoView.as_view()),
+        url(r'^channel/', ChannelInfoView.as_view()),
+        url(r'^video/', VideoInfoView.as_view()),
          ]
