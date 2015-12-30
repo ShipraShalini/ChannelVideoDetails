@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from src.api.views.videoview import *
+from src.api.views.videoview import listview
+from src.api.views.detailsview import detailsview
 
 
 urlpatterns = [
