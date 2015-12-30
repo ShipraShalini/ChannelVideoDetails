@@ -1,10 +1,19 @@
 
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search YouTube</title>
+    </head>
 
-<h1>CHANNEL INFORMATION</h1>
+    <body>
 
- <ul>
-     {% for video in channel_info %}
-     <li>video</li>
-     {% endfor %}
- </ul>
+        <h1>CHANNEL INFORMATION</h1>
+
+         <ul>
+             {% for video in channel_info %}
+             <li> {{ video }}</li>
+             {% endfor %}
+         </ul>
+    </body>
+</html>

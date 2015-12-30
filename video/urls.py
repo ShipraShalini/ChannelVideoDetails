@@ -27,6 +27,6 @@ urlpatterns = [
         url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
         url(r'^list/', ChannelView.as_view()),
         url(r'^detail/', VideoView.as_view()),
-        url(r'^channel/', ChannelInfoView.as_view()),
+        url(r'^channel/', ChannelInfoView.as_view(), name='channelinfo'),
         url(r'^video/', VideoInfoView.as_view()),
          ]

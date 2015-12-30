@@ -54,11 +54,12 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'video.urls'
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'FrontEnd/templates')
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['FrontEnd.templates'],
+        'DIRS': [TEMPLATE_PATH],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
