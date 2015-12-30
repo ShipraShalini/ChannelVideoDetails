@@ -2,6 +2,9 @@
 
 Uses Python YouTube API client to search YouTube for videos and channels.  
 
+Please update DEVELOPER_KEY in api/constants/backendconstants.py
+
+
 ####Videos
 Displays the Following details of Video for a given videoId:  
 - title  
