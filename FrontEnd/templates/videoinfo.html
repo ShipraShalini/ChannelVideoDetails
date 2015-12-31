@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block body_block %}
 
 <h2>VIDEO INFORMATION</h2>
 
@@ -13,5 +9,5 @@
      <li> {{ key }}: {{ value }}</li>
     {% endfor %}
     </ul>
-</body>
-</html>
+
+{% endblock %}
