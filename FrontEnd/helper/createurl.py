@@ -1,10 +1,10 @@
 from FrontEnd.constants.frontendconstants import *
 
 def createurl(type, id):
-    if type == 'channel':
-        endpoint='/list?channelId='
-    elif type == 'video':
-        endpoint='/detail?videoId='
+    if type == CHANNEL:
+        endpoint=CHANNELAPIENDPOINT
+    elif type == VIDEO:
+        endpoint=VIDEOAPIENDPOINT
     else:
         endpoint=''
         id=''
