@@ -6,7 +6,9 @@
 
  <ul>
      {% for video in channel_info %}
-     <li> {{ video }}</li>
+     {% for key, value in video.items %}
+     <li> {{ value }}</li>
+     {% endfor %}
      {% endfor %}
  </ul>
 
