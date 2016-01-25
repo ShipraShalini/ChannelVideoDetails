@@ -1,5 +1,7 @@
 #ChannelVideoDetails
 
+Code to display details of a YouTube video or channel.
+
 Using:
 - django
 - django Rest Framework
